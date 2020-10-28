@@ -13,11 +13,12 @@ var playlist = [
 ]
 
 function OnStart() {
-    FillPlaylist(playlist);
-    // ChangeWelcomePhrase();
+    // FillPlaylist(playlist);
+    ChangeWelcomePhrase();
 }
 function ChangeWelcomePhrase() {
-    var time = new Date().getTime();
+    var time = new Date(Date.now());
+    time = time.getHours();
     var message = document.getElementById("Welcome-Phrase");
 
     if (time < 11 && time >= 03) {
@@ -29,7 +30,7 @@ function ChangeWelcomePhrase() {
     if (time < 18 && time >= 15) {
         message.innerHTML = "Good Afternoon"
     }
-    if (time < 03 && time >= 18) {
+    if (time < 03 || time >= 18) {
         message.innerHTML = "Good Evening"
     }
 
