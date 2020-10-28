@@ -44,15 +44,19 @@ button {
     flex: 1;
     margin: 7.5px;
 }
- .navbar li:first-child{
+.navbar li:first-child{
     flex: 5;
-    font-size: 1.1rem;
 }
 .navbar a {
-    color: #ffffff;
+    color:#FE9B13;
     text-decoration: none;
     font-size: 0.9rem;
+    margin: auto 0;
 }
+.logo {
+    font-size: 2rem;
+}
+
 .navbar .submenu  {
     display: none;
     position: absolute;
@@ -123,7 +127,7 @@ button {
     margin: 0 10px;
 }
 /* playlist */
-/* .playlist {
+.playlist {
     display: flex;
     margin: 0 auto;
     flex-direction: column;
@@ -149,16 +153,17 @@ button {
 
 }
 .playlist table th {
-    background-color:rgb(101, 78, 163);
+    background-color:#FA4113;
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
 .playlist table td {
     color: rgb(56, 56, 56);
+    background-color:  #a7c9ae;
     font-weight: bold;
     margin: 0;
 }
 
 .playlist table tr:hover {
     background-color: rgb(234, 175, 200);
-} */
+} 

@@ -1,20 +1,20 @@
 var playlist = [
-    { SongName: "Mr.Brightside", Artist: "The Killers", AlbumPicUrl: "Img/Albums/HotFuss.png" },
-    { SongName: "No Role Modelz", Artist: "JCole", AlbumPicUrl: "Img/Albums/ForestHillsDrive.jpg" },
-    { SongName: "Love Is Only A Feeling", Artist: "Joey Bada$$", AlbumPicUrl: "Img/Albums/LoveIsOnlyAFeeling.jpg" },
-    { SongName: "Weekend In Paradise", Artist: "JAMIE WEBSTER", AlbumPicUrl: "Img/Albums/weekendinparadise.jpg" },
-    { SongName: "Marvins Room", Artist: "Drake", AlbumPicUrl: "Img/Albums/takecare.jpg" },
-    { SongName: "Ocean Eyes", Artist: "Billie Eilish", AlbumPicUrl: "Img/Albums/dontsmileatme.jpg" },
-    { SongName: "When Doves Cry", Artist: "Prince", AlbumPicUrl: "Img/Albums/purplerain.jpg" },
-    { SongName: "Fast Car", Artist: "Tracy Chapman", AlbumPicUrl: "Img/Albums/tracychapman.jpg" },
-    { SongName: "Take On Me", Artist: "a-Ha", AlbumPicUrl: "Img/Albums/aha.jpg" },
-    { SongName: "Heartbeats", Artist: "José González", AlbumPicUrl: "Img/Albums/veneer.jpg" },
-    { SongName: "Mad World", Artist: "Lily Allen", AlbumPicUrl: "Img/Albums/madworld.jpg" }
+    { SongName: "Mr.Brightside", Artist: "The Killers", AlbumPicUrl: "../Img/Albums/HotFuss.png" },
+    { SongName: "No Role Modelz", Artist: "JCole", AlbumPicUrl: "../Img/Albums/ForestHillsDrive.jpg" },
+    { SongName: "Love Is Only A Feeling", Artist: "Joey Bada$$", AlbumPicUrl: "../Img/Albums/LoveIsOnlyAFeeling.jpg" },
+    { SongName: "Weekend In Paradise", Artist: "JAMIE WEBSTER", AlbumPicUrl: "../Img/Albums/weekendinparadise.jpg" },
+    { SongName: "Marvins Room", Artist: "Drake", AlbumPicUrl: "../Img/Albums/takecare.jpg" },
+    { SongName: "Ocean Eyes", Artist: "Billie Eilish", AlbumPicUrl: "../Img/Albums/dontsmileatme.jpg" },
+    { SongName: "When Doves Cry", Artist: "Prince", AlbumPicUrl: "../Img/Albums/purplerain.jpg" },
+    { SongName: "Fast Car", Artist: "Tracy Chapman", AlbumPicUrl: "../Img/Albums/tracychapman.jpg" },
+    { SongName: "Take On Me", Artist: "a-Ha", AlbumPicUrl: "../Img/Albums/aha.jpg" },
+    { SongName: "Heartbeats", Artist: "José González", AlbumPicUrl: "../Img/Albums/veneer.jpg" },
+    { SongName: "Mad World", Artist: "Lily Allen", AlbumPicUrl: "../Img/Albums/madworld.jpg" }
 ]
 
 function OnStart() {
-    // FillPlaylist(playlist);
-    ChangeWelcomePhrase();
+    FillPlaylist(playlist);
+    // ChangeWelcomePhrase();
 }
 function ChangeWelcomePhrase() {
     var time = new Date().getTime();
