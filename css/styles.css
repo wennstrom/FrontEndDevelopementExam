@@ -175,3 +175,35 @@ button {
 .playlist table tr:hover {
     background-color: rgb(234, 175, 200);
 } 
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: bottom;
+    background-color: rgb(0, 0, 0);
+}
+footer .about-us {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.about-us h3 {
+    margin: 0;
+}
+.about-us p {
+    margin: 5;
+}
+footer .contact {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+footer .footermenu {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
