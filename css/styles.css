@@ -67,14 +67,14 @@ button {
 .banner {
     display: flex;
     flex-direction: column;
-    background-color: rgb(0, 255, 64);
     width: 100%;
     align-items: center;
-    background-image: url(../Img/Banner/herophoto.jpg);
+    background-image:  url(../Img/Banner/herophoto.jpg);
     background-size: 100%;
     background-position: 0 -300px;
     background-repeat: no-repeat;
-    height: 350px;
+    height: 250px;
+    color: rgb(241, 241, 241);
 }
 .banner h1 {
     margin: 10px;
@@ -91,6 +91,7 @@ button {
 }
 .banner button:hover{
     background-color: rgb(73, 73, 73);
+    color: #ffffff;
     
 }
 .banner .text-section {
