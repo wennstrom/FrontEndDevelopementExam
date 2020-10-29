@@ -8,6 +8,7 @@ html {
 }
 body {
     display: flex;
+    flex-direction: row;
     flex-direction: column;
     background-color: #0F0F0F;
     color: whitesmoke;
@@ -30,12 +31,14 @@ button {
 .main {
     display: flex;
     flex-direction: column;
-    flex: 1 0 auto;
+    margin-left: 45px;
+    height: calc(100vh - 10px);
 }
 /* nav */
 .navbar {
     display: flex;
     flex-direction: row;
+    margin-left: 45px;
     width: 100%;
     justify-content: flex-end;
 }
@@ -76,6 +79,35 @@ button {
 }
 .navbar .submenu:hover {
     display: block;
+}
+/* sidenav */
+.sidenav {
+    position: fixed;
+    width: 45px;
+    height: 100vh;
+    background-color: #FE9B13;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
+
+}
+
+.sidenav .sidenav-nav {
+    display: flex;
+    align-self: center;
+    padding: 0;
+    margin: auto;
+    flex-direction: column;
+}
+.sidenav .sidenav-nav ul {
+    list-style: none;
+}
+.sidenav .sidenav-nav li {
+    text-decoration: none;
+    margin-left: -45px;
+    text-align: center;
+    margin-top: 2.6rem;
 }
 /* banner section */
 
@@ -196,6 +228,7 @@ footer {
     background-color: rgb(0, 0, 0);
     color: rgb(129, 129, 129);
     padding: 5px;
+    margin-left: 50px;
 }
 footer .about-us {
     display: flex;
@@ -237,6 +270,9 @@ footer .footermenu {
     text-decoration: none;
     color: rgb(129, 129, 129); 
 }
+s.footermenu a:hover {
+    color: white;
+}
 footer h4, footer h3 {
     margin: 0 0 5px 0;
     padding: 0;
@@ -267,8 +303,5 @@ footer .contact {
     }
     footer .footermenu h4 {
         margin: 10px 0px 0px;
-    }
-    footer .footermenu a:hover {
-        color: white;
     }
 }
