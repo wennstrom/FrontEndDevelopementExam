@@ -1,5 +1,6 @@
 /* general */
 html {
+    height: 100%;
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
@@ -12,7 +13,7 @@ body {
     color: whitesmoke;
     padding: 0;
     margin: 0;
-    height: 1vh;
+    height: 100%;
 }
 header {
     display: flex;
@@ -26,7 +27,11 @@ button {
     border: none;
     width: fit-content;
 }
-
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
 /* nav */
 .navbar {
     display: flex;
@@ -54,6 +59,7 @@ button {
     font-size: 0.9rem;
     margin: auto 0;
     text-transform: uppercase;
+    -webkit-transition: color 0.3s ease-in-out;
 }
 .navbar a:hover {
     color: #FE9B13;
@@ -94,14 +100,13 @@ button {
 .banner button {
     margin-top: 15px;
     background-color:  #FE9B13;
-    color: rgb(241, 241, 241);
+    color: rgb(0, 0, 0);
     cursor: pointer;
     -webkit-transition: background-color 0.5s ease-in-out;
 }
 .banner button:hover{
     background-color: rgb(0, 0, 0);
-    color: #FE9B13;
-    
+    color: #FE9B13; 
 }
 .banner .text-section {
     display: flex;
@@ -133,6 +138,11 @@ button {
 }
 .icons i {
     margin: 0 10px;
+    cursor: pointer;
+    -webkit-transition: color 0.5s ease-in-out;
+}
+.icons i:hover {
+    color: #FE9B13;
 }
 /* playlist */
 .playlist {
@@ -180,30 +190,85 @@ button {
 footer {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    position: bottom;
+    flex-wrap: wrap;
+    margin-top: auto;
+    justify-content: space-evenly;
     background-color: rgb(0, 0, 0);
+    color: rgb(129, 129, 129);
+    padding: 5px;
 }
 footer .about-us {
     display: flex;
     flex-direction: column;
     flex: 1;
+    padding: 0 5px;
 }
 .about-us h3 {
-    margin: 0;
+    margin: 2.5px 0;
 }
-.about-us p {
-    margin: 5;
+footer .about-us p {
+    margin: 0;
 }
 footer .contact {
     display: flex;
     flex-direction: column;
     flex: 1;
+    padding: 0 5px
 }
 footer .footermenu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     flex: 1;
+    padding: 0 5px
 }
+.footermenu .navlinks  {
+    display: flex;
+    flex-direction: column;
+}
+.footermenu ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
+}
+.footermenu a {
+    text-decoration: none;
+    color: rgb(129, 129, 129); 
+}
+footer h4, footer h3 {
+    margin: 0 0 5px 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+footer .copyright {
+    color: rgb(129, 129, 129); 
+    margin-top: 10px; 
 
+}
+footer .copyright a {
+    color: rgb(255, 255, 255);   
+}
+footer .contact {
+    display: flex;
+    flex: 1;
+    padding: 0 10px;
+}
+@media screen and (max-width: 756px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .footermenu {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    footer .footermenu h4 {
+        margin: 10px 0px 0px;
+    }
+    footer .footermenu a:hover {
+        color: white;
+    }
+}
