@@ -12,7 +12,7 @@
 
 <body onload="ChangeWelcomePhrase()">
     <header>
-        <nav class=" navbar">
+        <nav class="navbar">
             <ul>
                 <li><a href="/html/index.html"><i class="fas fa-compact-disc logo"></i></a></li>
                 <li><a href="/html/playlist.html">Playlist</a></li>
@@ -22,14 +22,15 @@
         </nav>
 
     </header>
-    <div class="banner">
-        <div class="text-section">
-            <h1><span id="Welcome-Phrase">Good Morning</span></h1>
-            <h2>Welcome to your new</h2>
-            <h2>Website For Music Streaming</h2>
-            <button>START LISTENING</button>
+    <div class="main">
+        <div class="banner">
+            <div class="text-section">
+                <h1><span id="Welcome-Phrase">Good Morning</span></h1>
+                <h2>Welcome to your new</h2>
+                <h2>Website For Music Streaming</h2>
+                <button>START LISTENING</button>
+            </div>
         </div>
-    </div>
     <div class="featured-artists">
         <h2>Featured Artists</h2>
         <div class="slider">
@@ -40,23 +41,58 @@
             <img src="../Img/Artists/veronica.png" class="slides">
             <i class="fas fa-arrow-right" style="margin-left: auto;" onclick="ArrowClick(-1)"></i>
         </div>
-
     </div>
-
-    <div class="social-media">
-        <h2>Find Us On Social Media.</h2>
-        <div class="icons">
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram-square"></i>
-            <i class="fab fa-linkedin"></i>
+        <div class="social-media">
+            <h2>Find Us On Social Media.</h2>
+            <div class="icons">
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
         </div>
-    </div>
-    <div class="footer">
 
     </div>
+  </div>
+    <footer>
+        <div class="about-us">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo perspiciatis obcaecati ullam
+                quisquam,
+                fugiat corporis??</p>
+            <div class="copyright">
+                <span id="copyright-text"><i class="far fa-copyright"></i> 2020, Created by Oskar Wennström.</span>
+            </div>
+        </div>
+        <div class="footermenu">
+            <div class="navlinks">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="">playlist</a></li>
+                    <li><a href="">contact</a></li>
+                    <li><a href="">about</a></li>
+                </ul>
+            </div>
+            <div class="socallinks">
+                <h4>Follow us</h4>
+                <ul>
+                    <li><a href="">facebook</a></li>
+                    <li><a href="">instagram</a></li>
+                    <li><a href="">twitter</a></li>
+                    <li><a href="">linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact">
+            <h4>Contact</h4>
+            <address>
+                <span><i class="fas fa-house-user"></i> Otto Torrels Gata, 16 432 44 Varberg<br>
+                    <i class="fas fa-envelope-square"></i></i> stream@music.com
+                    <br><i class="fas fa-phone"></i> 070-122 33 44</span>
+            </address>
+        </div>
+    </footer>
     <script type="text/javascript" src="../JS/functions.js"></script>
     <script type="text/javascript" src="../JS/index.js"></script>
 </body>
-
 </html>
