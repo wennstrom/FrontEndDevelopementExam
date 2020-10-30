@@ -110,6 +110,41 @@ button {
     align-items: center;
     margin: auto;
 }
+/*featured artists*/
+.featured-artists {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    max-width: 400px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.slider i  {
+    font-size: 1.5rem;
+    margin: auto 0;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+}
+.slider i:hover {
+    color: gray;
+}
+.slider .slides {
+    display: none;
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+
+/* social */
 .social-media {
     display: flex;
     flex-direction: column;
