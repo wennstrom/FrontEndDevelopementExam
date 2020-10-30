@@ -12,7 +12,7 @@
 
 <body onload="ChangeWelcomePhrase()">
     <header>
-        <nav class=" navbar">
+        <nav class="navbar">
             <ul>
                 <li><a href="/html/index.html"><i class="fas fa-compact-disc logo"></i></a></li>
                 <li><a href="/html/playlist.html">Playlist</a></li>
@@ -31,7 +31,17 @@
                 <button>START LISTENING</button>
             </div>
         </div>
-
+    <div class="featured-artists">
+        <h2>Featured Artists</h2>
+        <div class="slider">
+            <i class="fas fa-arrow-left" style="margin-right: auto;" onclick="ArrowClick(1)"></i>
+            <img src="../Img/Artists/jcole.jpg" class="slides">
+            <img src="../Img/Artists/brandon.jpg" class="slides">
+            <img src="../Img/Artists/tracy.jpg" class="slides">
+            <img src="../Img/Artists/veronica.png" class="slides">
+            <i class="fas fa-arrow-right" style="margin-left: auto;" onclick="ArrowClick(-1)"></i>
+        </div>
+    </div>
         <div class="social-media">
             <h2>Find Us On Social Media.</h2>
             <div class="icons">
@@ -43,6 +53,7 @@
         </div>
 
     </div>
+  </div>
     <footer>
         <div class="about-us">
             <h3>About Us</h3>
@@ -82,6 +93,6 @@
         </div>
     </footer>
     <script type="text/javascript" src="../JS/functions.js"></script>
+    <script type="text/javascript" src="../JS/index.js"></script>
 </body>
-
 </html>
