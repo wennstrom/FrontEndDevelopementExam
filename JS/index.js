@@ -13,7 +13,7 @@ function DisplayPicture(n) {
 
     if (index > images.length) {
         //displays first image
-        index = 0;
+        index = 1;
     }
     for (var i = 0; i < images.length; i++) {
         images[i].style.display = "none";
