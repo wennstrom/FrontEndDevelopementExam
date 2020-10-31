@@ -317,4 +317,7 @@ footer .contact {
     footer .footermenu a:hover {
         color: white;
     }
+    footer hr {
+        border: 0.5px solid;
+    }
 }
