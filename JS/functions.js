@@ -15,8 +15,17 @@ var playlist = [
 function OnStart() {
     // FillPlaylist(playlist);
     ChangeWelcomePhrase();
+    AddCurrentYearToFooter()
 }
+function AddCurrentYearToFooter() {
+    console.log("hello");
+    var footerYear = document.getElementById("currentYear");
+    var currentyear = new Date().getFullYear();
+    footerYear.innerHTML = " " + currentyear;
+}
+
 function ChangeWelcomePhrase() {
+    AddCurrentYearToFooter();
     var time = new Date(Date.now());
     time = time.getHours();
     var message = document.getElementById("Welcome-Phrase");

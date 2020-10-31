@@ -134,20 +134,24 @@ button {
 }
 .banner h1 {
     margin: 10px;
+    color: #FE9B13;
+    text-shadow: 2px 2px #0F0F0F;
 }
 .banner h2 {
     margin: 0;
+    text-shadow: 1px 2px #0F0F0F;
 }
 .banner button {
     margin-top: 15px;
     background-color:  #FE9B13;
     color: rgb(0, 0, 0);
     cursor: pointer;
-    -webkit-transition: background-color 0.5s ease-in-out;
+    -webkit-transition: border 0.3s ease-in;
+    border: 2px solid  #0F0F0F;
 }
 .banner button:hover{
-    background-color: rgb(0, 0, 0);
-    color: #FE9B13; 
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0);
+
 }
 .banner .text-section {
     display: flex;
@@ -156,6 +160,41 @@ button {
     align-items: center;
     margin: auto;
 }
+/*featured artists*/
+.featured-artists {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    max-width: 400px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.slider i  {
+    font-size: 1.5rem;
+    margin: auto 0;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+}
+.slider i:hover {
+    color: gray;
+}
+.slider .slides {
+    display: none;
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+
+/* social */
 .social-media {
     display: flex;
     flex-direction: column;
@@ -230,7 +269,7 @@ button {
 /* footer */
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-top: auto;
     justify-content: space-evenly;
@@ -238,6 +277,10 @@ footer {
     color: rgb(129, 129, 129);
     padding: 5px;
     margin-left: 50px;
+}
+.footer-sektions {
+    display: flex;
+    flex-direction: row;
 }
 footer .about-us {
     display: flex;
@@ -301,6 +344,9 @@ footer .contact {
     padding: 0 10px;
 }
 @media screen and (max-width: 756px) {
+    .navbar li:first-child {
+        flex: 1;
+    }
     footer {
         flex-direction: column;
         justify-content: center;
@@ -313,4 +359,5 @@ footer .contact {
     footer .footermenu h4 {
         margin: 10px 0px 0px;
     }
+
 }
