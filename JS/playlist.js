@@ -9,7 +9,10 @@ var playlistArray = [
     { SongName: "Fast Car", Artist: "Tracy Chapman", AlbumPicUrl: "../Img/Albums/tracychapman.jpg" },
     { SongName: "Take On Me", Artist: "a-Ha", AlbumPicUrl: "../Img/Albums/aha.jpg" },
     { SongName: "Heartbeats", Artist: "José González", AlbumPicUrl: "../Img/Albums/veneer.jpg" },
-    { SongName: "Mad World", Artist: "Lily Allen", AlbumPicUrl: "../Img/Albums/madworld.jpg" }
+    { SongName: "Mad World", Artist: "Lily Allen", AlbumPicUrl: "../Img/Albums/madworld.jpg" },
+    { SongName: "Uptown Girl", Artist: "Billy Joel", AlbumPicUrl: "../Img/Albums/billyjoel.jpg" },
+    { SongName: "I Know It's Over", Artist: "The Smiths", AlbumPicUrl: "../Img/Albums/thesmiths.png" },
+    { SongName: "Friday I'm In Love", Artist: "The Cure", AlbumPicUrl: "../Img/Albums/the cure.jpg" }
 ]
 
 function OnStartPlaylist() {

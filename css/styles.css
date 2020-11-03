@@ -139,26 +139,45 @@ button a {
     font-size: 1.3rem;
     overflow: hidden;
     transition: ease-out 0.3s;
+    font-size: 1.5rem;
     
 }
-.sidenav .cross {
-    float: right;
-}
-.sidenav table {
+.sidenav ul {
+    display: flex;
+    flex-direction: column;
     text-align: left;
-    border-collapse: collapse;
     margin-top: 40px;
 }
-.sidenav table td {
-    padding: 10px;
-    cursor: pointer;
+.sidenav a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
-.sidenav table tr:hover {
+.sidenav li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 200px;
+    padding: 10px 0px;
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+.sidenav span {
+    margin: auto 0;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+.sidenav a:hover {
     color: rgb(0, 0, 0);
 }
+.sidenav table tr:hover {
+    color: rgb(0, 0, 0)
+}
 .sidenavlogo {
-    font-size: 2.3rem;
-    margin-top: 10px;
+    margin-top: 7px;
+    font-size: 2rem;
 }
 .sidenav:hover {
     width: 200px;

@@ -43,21 +43,3 @@
     font-weight: bold;
     margin: 0;
 }
-
-.playlist table tr:hover {
-    background-color: rgb(234, 175, 200);
-} 
-.pagination {
-    display: inline-block;
-    margin-top: 15px;
-    text-align: center;
-}
-.pagination a {
-    padding: 8px 16px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    transition: 0.2s ease-out;
-}
-.pagination a:hover {
-    background-color: rgb(145, 145, 145);
-}
