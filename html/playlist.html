@@ -7,24 +7,101 @@
     <title>Playlist</title>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/12a8736c35.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/playlist.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body onload="OnStart()">
+<body onload="OnStartPlaylist(), OnStart()">
     <header>
         <nav class="navbar">
             <ul>
                 <li><a href="/html/index.html"><i class="fas fa-compact-disc logo"></i></a></li>
                 <li><a href="/html/playlist.html">Playlist</a></li>
-                <li><a href="">Test</a></li>
+                <li><span onclick="DisplaySubMenu()"> SubMenu<i class="fas fa-arrow-down"></i></span>
+                    <ul class="submenu" id="submenu">
+                        <li><a href="">Link 1</a></li>
+                        <li><a href="">Link 2</a></li>
+                        <li><span onclick="DisplaySubSubMenu()">Link 3 <i class="fas fa-arrow-right"></i></span>
+                            <ul class="subsubmenu" id="subsubmenu">
+                                <li><a href="">Link 1</a></li>
+                                <li><a href="">Link 2</a></li>
+                                <li><span>Link 3</i></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
                 <li><a href="">Test</a></li>
             </ul>
         </nav>
     </header>
+    <div class="sidenav">
+        <div class="sidenav-nav">
+            <i class="fas fa-compact-disc sidenavlogo"></i>
+            <table>
+                <tr>
+                    <td>
+                        <i class="fas fa-music"></i>
+                    </td>
+                    <td>
+                        Playlist
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fas fa-envelope">
+                    </td>
+                    <td>
+                        Contact
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fas fa-home">
+                    </td>
+                    <td>
+                        Hello
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <i class="fab fa-twitter-square"></i>
+                    </td>
+                    <td>
+                        @streamMusic
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fab fa-facebook-square"></i>
+                    </td>
+                    <td>
+                        /streamMusic
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fab fa-instagram-square"></i>
+                    </td>
+                    <td>
+                        @streamMusic
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fab fa-linkedin"></i>
+                    </td>
+                    <td>
+                        /streamMusic
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
     <div class="main">
         <div class="playlist">
-            <input type="text" placeholder="search..." id="searchInput" oninput="OnFilter()">
-
+            <input type="text" placeholder="search..." id="searchInput" oninput="OnFilter()" onload="FillPlaylist()">
             <table id="playlistTable">
                 <thead>
                     <tr>
@@ -38,7 +115,49 @@
             </table>
         </div>
     </div>
-
+    <footer>
+        <div class=" footer-sektions">
+            <div class="about-us">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo perspiciatis obcaecati ullam
+                    quisquam,
+                    fugiat corporis??</p>
+            </div>
+            <div class="footermenu">
+                <div class="navlinks">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="">playlist</a></li>
+                        <li><a href="">contact</a></li>
+                        <li><a href="">about</a></li>
+                    </ul>
+                </div>
+                <div class="socallinks">
+                    <h4>Follow us</h4>
+                    <ul>
+                        <li><a href="">facebook</a></li>
+                        <li><a href="">instagram</a></li>
+                        <li><a href="">twitter</a></li>
+                        <li><a href="">linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact">
+                <h4>Contact</h4>
+                <address>
+                    <span><i class="fas fa-house-user"></i> Otto Torrels Gata 16, 432 44 Varberg<br>
+                        <i class="fas fa-envelope-square"></i></i> stream@music.com
+                        <br><i class="fas fa-phone"></i> 070-122 33 44</span>
+                </address>
+            </div>
+        </div>
+        <div class="copyright">
+            <span id="copyright-text"><i class="far fa-copyright"></i><span id="currentYear"></span> | Created by
+                Oskar
+                Wennström.</span>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../JS/playlist.js"></script>
     <script type="text/javascript" src="../JS/functions.js"></script>
 </body>
 

@@ -7,20 +7,32 @@
     <title>Musik</title>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/12a8736c35.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body onload="ChangeWelcomePhrase()">
+<body onload="ChangeWelcomePhrase(), ArrowClick(2)">
     <header>
         <nav class="navbar">
             <ul>
                 <li><a href="/html/index.html"><i class="fas fa-compact-disc logo"></i></a></li>
                 <li><a href="/html/playlist.html">Playlist</a></li>
-                <li><a href="">Test <i class="fas fa-arrow-down"></i></a></li>
-                <li><a href="">Test</a></li>
+                <li><span onclick="DisplaySubMenu()"> SubMenu<i class="fas fa-arrow-down"></i></span>
+                    <ul class="submenu" id="submenu">
+                        <li><a href="">Link 1</a></li>
+                        <li><a href="">Link 2</a></li>
+                        <li><span onclick="DisplaySubSubMenu()">Link 3 <i class="fas fa-arrow-right"></i></span>
+                            <ul class="subsubmenu" id="subsubmenu">
+                                <li><a href="">Link 1</a></li>
+                                <li><a href="">Link 2</a></li>
+                                <li><span>Link 3</i></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">Link</a></li>
             </ul>
         </nav>
-
     </header>
     <div class="sidenav">
         <div class="sidenav-nav">
@@ -93,7 +105,7 @@
                 <h1><span id="Welcome-Phrase"></span></h1>
                 <h2>Welcome to your new</h2>
                 <h2>Website for Music Streaming</h2>
-                <button>START LISTENING</button>
+                <button><a href="playlist.html">STREAM MUSIC</a></button>
             </div>
         </div>
         <div class="featured-artists">
@@ -161,6 +173,7 @@
     </footer>
     <script type="text/javascript" src="../JS/functions.js"></script>
     <script type="text/javascript" src="../JS/index.js"></script>
+
 </body>
 
 </html>
