@@ -17,7 +17,6 @@ var playlistArray = [
 
 function OnStartPlaylist() {
     FillPlaylist(playlistArray);
-    console.log("hello");
 }
 function ClearPlaylist() {
     var playlistBody = document.getElementById("playlistBody");

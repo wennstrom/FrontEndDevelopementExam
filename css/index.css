@@ -4,10 +4,10 @@
     width: 100%;
     align-items: center;
     background-image:  url(../Img/Banner/herophoto.jpg);
-    background-position: 0 -300px;
+    background-position: 0 -200px; 
     background-repeat: no-repeat;
-    background-size: 100%;
-    height: 250px;
+    background-size: 100% 100vh;
+    height: 40vh;
     color: rgb(241, 241, 241);
 }
 .banner h1 {
